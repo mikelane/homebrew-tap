@@ -1,25 +1,25 @@
 class GitPrism < Formula
   desc "Agent-optimized git data MCP server — structured change manifests and full file snapshots for LLM agents"
   homepage "https://github.com/mikelane/git-prism"
-  version "0.4.0"
+  version "0.6.0"
   if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/mikelane/git-prism/releases/download/v0.4.0/git-prism-aarch64-apple-darwin.tar.xz"
-      sha256 "a8f59768514ecdc5d0a8d6248a358b42a44d1edd4372be12c739eb373f4f0013"
+      url "https://github.com/mikelane/git-prism/releases/download/v0.6.0/git-prism-aarch64-apple-darwin.tar.xz"
+      sha256 "d6107d7b1793dcc3bed92113824604867836497ee43df223816e5fa076e7a1dc"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/mikelane/git-prism/releases/download/v0.4.0/git-prism-x86_64-apple-darwin.tar.xz"
-      sha256 "f81f13518a51f760cfd715dc7d29cc57a60c8ccd90e113acbe7694177c18e07b"
+      url "https://github.com/mikelane/git-prism/releases/download/v0.6.0/git-prism-x86_64-apple-darwin.tar.xz"
+      sha256 "76a3cd9df6f3086ab4ad162276bec32a1dd4b0153d6b18ffccbce858e9e2f844"
     end
   end
   if OS.linux?
     if Hardware::CPU.arm?
-      url "https://github.com/mikelane/git-prism/releases/download/v0.4.0/git-prism-aarch64-unknown-linux-gnu.tar.xz"
-      sha256 "d8bbe995366e2b92f98fc9687612c28db8a2b05c5a51ea89d0f305b39597e6c5"
+      url "https://github.com/mikelane/git-prism/releases/download/v0.6.0/git-prism-aarch64-unknown-linux-gnu.tar.xz"
+      sha256 "4bab2b22c80d2f2169371027f068ae131a48042ade34139e0a5d86830d1abf31"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/mikelane/git-prism/releases/download/v0.4.0/git-prism-x86_64-unknown-linux-gnu.tar.xz"
-      sha256 "c1e6f954e33567442362ef27f77ca521ab9155fa8a9cca788e59d35475334fb1"
+      url "https://github.com/mikelane/git-prism/releases/download/v0.6.0/git-prism-x86_64-unknown-linux-gnu.tar.xz"
+      sha256 "642eb10c711325ecac3091f5d793eebf7eef44887b21a228624ed6440690dccf"
     end
   end
   license "Apache-2.0"
